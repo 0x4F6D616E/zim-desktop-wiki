@@ -104,6 +104,7 @@ url_re = re.compile(
 
 	')', re.U
 )
+url_re = ''
 
 url_trailing_punctuation = ('?', '!', '.', ',', ':', '*', '_', '~')
 
@@ -114,8 +115,11 @@ def is_url(text):
 	@param text: text to match as url
 	@returns: C{True} if C{text} is a valid url according to GFM rules
 	'''
+	return False
+"""
 	url = match_url(text)
 	return url == text # No trailing puntuation or ")" excluded
+"""
 
 
 def match_url(text):
