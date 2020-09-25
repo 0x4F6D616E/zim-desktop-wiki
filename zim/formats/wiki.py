@@ -84,26 +84,7 @@ def _remove_indent(text, indent):
 # File paths cannot contain '\', '/', ':', '*', '?', '"', '<', '>', '|'
 # These are valid URL / path seperators: / \ : ? |
 # So restrict matching " < > and also '
-url_re = re.compile(
-	'\\b(?P<url>'
-
-	'(www\.|https?://|\w+://)'			# autolink & autourl prefix
-	'(?P<domain>([\w\-]+\.)+[\w\-]+)' 	# 2 or more domain sections
-	'[^\s<]*'					# any non-space char except "<"
-
-	')|(?P<email>'
-
-	'(mailto:)?'
-	'[\w\.\-_+]+@'				# email prefix
-	'([\w\-_]+\.)+[\w\-_]+'	# email domain
-
-	')|(?P<fileuri>'
-
-	'file:/+'
-	'[^\s"<>\']+'
-
-	')', re.U
-)
+url_re = re.compile('')
 
 url_trailing_punctuation = ('?', '!', '.', ',', ':', '*', '_', '~')
 
@@ -114,11 +95,8 @@ def is_url(text):
 	@param text: text to match as url
 	@returns: C{True} if C{text} is a valid url according to GFM rules
 	'''
-	return False
-"""
 	url = match_url(text)
 	return url == text # No trailing puntuation or ")" excluded
-"""
 
 
 def match_url(text):
