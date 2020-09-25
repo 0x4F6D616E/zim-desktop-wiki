@@ -216,7 +216,7 @@ class WikiParser(object):
 			| Rule(TAG, r'(?<!\S)@\w+', process=self.parse_tag)
 			| Rule(EMPHASIS, r'//(?!/)(.*?)(?<!:)//', descent=descent) # no ':' at the end (ex: 'http://')
 			| Rule(STRONG, r'\*\*(?!\*)(.*?)\*\*', descent=descent)
-			| Rule(MARK, r'__(?!_)(.*?)__', descent=descent)
+			| Rule(MARK, r'____(?!_)(.*?)____', descent=descent)
 			| Rule(SUBSCRIPT, r'_\{(?!~)(.+?)\}', descent=descent)
 			| Rule(SUPERSCRIPT, r'\^\{(?!~)(.+?)\}', descent=descent)
 			| Rule(STRIKE, r'~~(?!~)(.+?)~~', descent=descent)
