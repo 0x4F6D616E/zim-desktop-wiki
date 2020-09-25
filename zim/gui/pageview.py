@@ -257,7 +257,7 @@ markup_re = [
 	# the group captures the content to keep
 	('style-strong', re.compile(r'\*\*(.*)\*\*$')),
 	('style-emphasis', re.compile(r'\/\/(.*)\/\/$')),
-	('style-mark', re.compile(r'__(.*)__$')),
+	('style-mark', re.compile(r'____(.*)____$')),
 	('style-code', re.compile(r'\'\'(.*)\'\'$')),
 	('style-strike', re.compile(r'~~(.*)~~$')),
 	('style-sup', re.compile(r'(?<=\w)\^\{(\S*)}$')),
