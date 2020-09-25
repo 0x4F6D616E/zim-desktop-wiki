@@ -104,7 +104,6 @@ url_re = re.compile(
 
 	')', re.U
 )
-url_re = ''
 
 url_trailing_punctuation = ('?', '!', '.', ',', ':', '*', '_', '~')
 
