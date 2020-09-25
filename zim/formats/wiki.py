@@ -84,7 +84,7 @@ def _remove_indent(text, indent):
 # File paths cannot contain '\', '/', ':', '*', '?', '"', '<', '>', '|'
 # These are valid URL / path seperators: / \ : ? |
 # So restrict matching " < > and also '
-url_re = re.compile('')
+url_re = re.compile('AVERYLOGNSTRINGTHATISVERYVERYVERYVERYVERYLOONGGGG!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!')
 
 url_trailing_punctuation = ('?', '!', '.', ',', ':', '*', '_', '~')
 
