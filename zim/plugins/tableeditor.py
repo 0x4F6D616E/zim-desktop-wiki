@@ -38,7 +38,7 @@ SYNTAX_CELL_INPUT = [
 # With this syntax text can be format within a table-cell
 SYNTAX_WIKI_PANGO2 = [
 	(r'<strong>\1</strong>', r'<b>\1</b>', r'**\1**'),
-	(r'<mark>\1</mark>', r'<span background="yellow">\1</span>', r'__\1__'),
+	(r'<mark>\1</mark>', r'<span background="yellow">\1</span>', r'____\1____'),
 	(r'<code>\1</code>', r'<tt>\1</tt>', r"''\1''"),
 	(r'<strike>\1</strike>', r'<s>\1</s>', r'~~\1~~'),
 	# Link url without link text  - Link url has always size = 0
